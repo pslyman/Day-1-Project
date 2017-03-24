@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="swapi">
+<head>
+    <meta charset="UTF-8">
+    <title>SWAPI</title>
+
+    <style>
+        .person{
+            display: inline-block;
+            padding: 30px;
+            background: #f7f7f7;
+            border: 1px solid #ccc;
+            margin: 10px;
+        }
+    </style>
+</head>
+<body ng-controller="swCtrl">
+        <button ng-click="getNext(pageNum)">Get Next 10</button>
+
+    <div class="person" ng-repeat="person in people">
+        <h1>{{person.name}}</h1>
+        <p>Height: {{person.height}}</p>
+        <p>Hair: {{person.hair_color}}</p>
+    </div>
+
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.1/angular.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>                                                     
