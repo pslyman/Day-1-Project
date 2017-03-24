@@ -1,62 +1,94 @@
-body, html {
-  background-color: #D8D8D8;
-margin: 0;
-padding: 0;
-}
-
-
-
-.container{
-  width:60vw;
-  margin: 0 auto;
-  background-color: #EFEFEF;
+html, body {
+    background-color: #CFD8DC;
 
 }
 
-.content {
-height: calc(100vh - 50px);
-
-
-
+head title {
+  display: none;
 }
 
-footer {
-  height: 100px;
-  background-color: #444444;
-
-}
-
-.horizontal-list {
-
-
-}
-
-ul {
-  list-style-type: none;
-  margin: 0 0px;
+body {
   padding: 0;
-  overflow: hidden;
-  background-color: #333;
-  display:flex;
-  justify-content: space-around;
+  margin: 0;
+  display: inline-block;
+  overflow-x: hidden;
+}
+
+html {
+  margin: 0;
+  padding: 0;
+  display: inline-block;
+}
+
+
+.header .shrink
+  {
+    height: 100px;
+    color: blue;
+    background-color: blue;
+  }
+
+.header {
+  width: 100vw;
+  height: 50px;
+  padding: 0;
+  margin: 0;
+  position: fixed;
+  background-color: #F8F8FF;
+  top: 0;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  /*transition: ease 0.5s;*/
+  animation-delay: 2s;
+  box-shadow: 0 3px 5px grey;
+  transition: height 0.3s;
+}
+
+.header h1 {
+  margin: 0;
+  padding: 0;
+  font-size: 18px;
+  background-color: #F8F8FF;
+  color: black;
+
+}
+.bodySection {
+  margin: 50px 15vw 0 15vw;
+  transition-timing-function: linear;
+  background-color: #F8F8FF;
+  width: 70vw;
+  height: 1000px;
+  transition: ease 0.5s;
+  animation-delay: 2s;
 
 }
 
-li {
-    float: left;
-
-
-
+.print {
+margin: 10px 10% 0px 10%;
+width: 80%;
+align-items: center;
+transition: ease 0.5s;
+animation-delay: 2s;
+}
+.print p {
+  background-color: #F8F8FF;
+  text-align: center;
 }
 
-li a {
-    display: inline-block;
-    color: white;
-    text-align: center;
-    padding: 14px 14vw;
-    text-decoration: none;
-}
-
-li a:hover {
-    background-color: #111;
+/*@media (max-width: 1000px) {
+  .bodySection {
+    margin: 0px;
+    width: 100vw;
+  }
+  .print {
+    margin: 10px 5% 0px 5%;
+    width: 90%;
+  }
+  .header {
+    height: 30px;
+  }
+  .bodySection {
+  margin-top: 30px;
+  }
 }
